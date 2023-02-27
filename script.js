@@ -724,7 +724,9 @@ slider.style.overflow = 'visible';
   //Activate dots
   const actDot = function (slide) {
     //Deactivating all the dots
-    dots.forEach(dot => dot.classList.remove('dots__dot--active'));
+    document
+      .querySelectorAll('.dots__dot')
+      .forEach(dot => dot.classList.remove('dots__dot--active'));
 
     //Activating the one we want
     //dots[slide].classList.add('dots__dot--active');
